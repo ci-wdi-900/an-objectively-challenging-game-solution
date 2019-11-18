@@ -6,6 +6,11 @@ You'll be making a game, setting up the objects and manipulating the html we've 
 
 This project will be _very much_ a set of tasks for you to do, described in no great detail. You'll have to figure out how to implement the specifications, but we'll lay them out.
 
+### Reference Site
+
+If you want to see the code at work, check out [the full game](http://objectively-challenging.surge.sh/). It works, though it could sure use some love at some point.
+
+
 ### Setup
 
 * Create objects called `monster` and `boss` in `enemies.js` and `player` in `player.js`. Give them all a `hitPoints` property, an `attackMin` property, and an `attackMax` property; the first will be how much "health" they currently have, and the last two will be used to randomly generate attack damage.
