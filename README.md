@@ -52,7 +52,7 @@ We have a working game now! But the user doesn't really know what's happening ye
 
 ### Customizing Your Game
 
-* The Mario theme is stupid. Change the images, the title of the page, or anything else to make the game yours.
+* The Mario theme is stupid. Change the images, the title of the page, or anything else to make the game yours. Add some enemies pictures! Go _ham_.
 * Try to make the game even by tweaking the values in your objects. Games are more fun if you aren't sure if you're gonna win or not!
 * Finally, add whatever you want. Items the player picks up. Armor to mitigate damage. Different kinds of enemies with different abilities.
 
