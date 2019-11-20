@@ -1,5 +1,5 @@
 const fightButton = document.querySelector('#fight')
-fightButton.onclick = attackRound;
+fightButton.addEventListener('click', attackRound);
 let currentMonster = monster;
 
 function attackRound() {
@@ -13,6 +13,7 @@ function attackRound() {
       currentMonster = boss;
     } else {
       updateResult('You beat all the monsters! You win!')
+      reset();
     }
   } else {
     const monsterDamage = getAttackDamage(currentMonster.attackMin, currentMonster.attackMax);
@@ -48,14 +49,7 @@ function updateHealthBars() {
 }
 
 function updateMonsterDamageText(damage) {
-  let monsterDamageText = '';
-  if (damage < 1) {
-    monsterDamageText += `The monster barely scratched you with ${damage}.`;
-  } else if (damage < 4) {
-    monsterDamageText += `The monster hit you for ${damage}`;
-  } else {
-    monsterDamageText += `The monster clobbered you with ${damage}.`;
-  }
+  const monsterDamageText = `The monster hit you for ${damage}`;
   
   document.querySelector('#monster-damage-taken').innerText = monsterDamageText;
 }
